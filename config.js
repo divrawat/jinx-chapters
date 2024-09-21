@@ -1,5 +1,5 @@
 // export const DOMAIN = 'http://localhost:3000';
-export const DOMAIN = 'https://jinxchapters.online';
+export const DOMAIN = 'https://www.jinxchapters.online';
 
 export const DOMAIN_NAME = 'jinxchapters.online';
 
