@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Head from 'next/head';
-import { APP_NAME, DOMAIN, MANGA_NAME, NEXT_PREVIOUS_PREFIX, IMAGE_PREFIX, CHAPTER_PREFIX, AUTHOR_PAGE, LOGO_URL, chaptersData, IMAGES_SUBDOMAIN, DOMAIN_NAME, MANGA_GENRE, MANGA_TYPE, last5chapters } from '@/config';
+import { APP_NAME, DOMAIN, MANGA_NAME, NEXT_PREVIOUS_PREFIX, IMAGE_PREFIX, CHAPTER_PREFIX, AUTHOR_PAGE, LOGO_URL, chaptersData, IMAGES_SUBDOMAIN, DOMAIN_NAME, MANGA_GENRE, MANGA_TYPE, last5chapters, HEADER_MANGA_DESC } from '@/config';
 // import DisqusComments from '@/components/DisQus';
 // import { AiFillChrome } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
@@ -33,7 +33,7 @@ export default function Chapter({ chapterNumber, imageUrls, totalChapters, param
     const nextChapter = chapterIndex < totalChapters - 1 ? chaptersData[chapterIndex + 1].chapterNumber : null;
 
 
-    const DESCRIPTION = `Read ${MANGA_NAME} chapter ${chapterNumber} online at ${DOMAIN_NAME} in a high-quality way.`;
+    const DESCRIPTION = `Read ${MANGA_NAME} ${MANGA_TYPE} chapter ${chapterNumber} online at ${DOMAIN_NAME}. ${HEADER_MANGA_DESC}`;
     const URL = params.chapter;
 
 

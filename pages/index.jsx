@@ -129,10 +129,10 @@ export default function Home() {
 
   const head = () => (
     <Head>
-      <title>{`${MANGA_NAME} Manga Online`}</title>
+      <title>{`${MANGA_NAME} ${MANGA_TYPE} Online`}</title>
       <meta name="description" content={APP_DESCRIPTION} />
       <link rel="canonical" href={`${DOMAIN}`} />
-      <meta property="og:title" content={`${MANGA_NAME} Manga Online`} />
+      <meta property="og:title" content={`${MANGA_NAME} ${MANGA_TYPE} Online`} />
       <meta property="og:description" content={APP_DESCRIPTION} />
       <meta property="og:type" content="webiste" />
       <meta name="robots" content="follow, index, noarchive, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
