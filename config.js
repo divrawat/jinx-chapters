@@ -82,6 +82,7 @@ export const MANGA_SUMMARY = [
 
 
 export const navLinks = [
+    { text: 'Jinx Manhwa', href: `https://jinx.adoptedbyamurderousdukefamily.in.net` },
     { text: 'Jinx Chapter 50', href: `${DOMAIN}/chapter-50` },
     { text: 'Jinx Chapter 10', href: `${DOMAIN}/chapter-10` },
     { text: 'Jinx Chapter 54', href: `${DOMAIN}/chapter-54` },
